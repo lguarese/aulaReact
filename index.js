@@ -1,10 +1,12 @@
-function MinhaFunc() {
-    const numeros = [1,2,3,4];
-    let i;
-  
-    for(i=0; i<numeros.length; i++){
-      console.log(numeros[i]);
-    }
-  }
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
 
-  MinhaFunc();
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + '/src/index.html'));
+});
+
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
+});
