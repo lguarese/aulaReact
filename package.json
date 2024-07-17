@@ -4,11 +4,14 @@
   "description": "Sistema de Gerenciamento de Carros",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node entry.js"
   },
   "author": "LGuarese",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
   }
 }
